@@ -79,6 +79,11 @@ a {
   margin: 0 30px;
 }
 
+#calendar {
+  padding: 50px;
+  margin: 0 auto;
+}
+
 #intro {
   min-height: 100vh;
   max-width: none;
