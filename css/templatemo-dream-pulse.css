@@ -568,6 +568,15 @@ figure.effect-bubba:hover p {
   height: 120px;
 }
 
+.tm-by-laws-wrap a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .tm-contact-form-wrap {
   display: flex;
   align-items: center;
