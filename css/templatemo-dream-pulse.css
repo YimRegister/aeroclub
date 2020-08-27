@@ -96,6 +96,11 @@ a {
   max-width: none;
 }
 
+#by-laws {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .collapsible {
   background-color: rgba(131, 173, 242, 0.7);
   color: white;
@@ -327,6 +332,10 @@ a {
   }
   .content{
     width:100%;
+  }
+
+  #by-laws {
+    width: 60%;
   }
 }
 
@@ -732,7 +741,10 @@ figure.effect-bubba:hover p {
 
   .tm-w-not80{
     width:100%;
+  }
 
+  #history {
+    margin: 0 15px;
   }
 }
 
@@ -743,5 +755,9 @@ figure.effect-bubba:hover p {
 
   .tm-box-pad {
     padding: 50px 30px;
+  }
+
+  #history {
+    margin: 0;
   }
 }
