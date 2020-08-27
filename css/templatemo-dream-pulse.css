@@ -71,6 +71,11 @@ a {
   align-items: center;
   height: auto;
   padding: 66px 20px;
+  justify-content: center;
+}
+
+#history {
+  margin: 0 30px;
 }
 
 #intro {
@@ -470,10 +475,12 @@ figure.effect-bubba:hover p {
 
 .tm-clients-images {
   max-width: 1040px;
+  margin: 0 auto;
 }
 
 .tm-w-80 {
-  max-width: 80%;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .tm-flex-item-left {
