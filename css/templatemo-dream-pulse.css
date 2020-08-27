@@ -75,6 +75,13 @@ a {
   justify-content: center;
 }
 
+.tm-section-who {
+  display: flex;
+  height: auto;
+  padding: 0 20px;
+  justify-content: center;
+}
+
 #history {
   margin: 0 30px;
 }
@@ -271,8 +278,8 @@ a {
   text-decoration: none;
 }
 
-.tm-section-half {
-
+.tm-section-half-who {
+  height: 100%;
 }
 
 .tm-section-icon {
