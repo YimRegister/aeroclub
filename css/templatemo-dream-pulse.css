@@ -88,7 +88,7 @@ a {
   background-color: rgba(131, 173, 242, 0.7);
   color: white;
   cursor: pointer;
-  width:60%;
+  width:100%;
   padding: 18px;
   border: none;
   text-align: left;
@@ -99,7 +99,7 @@ a {
 .collapsible:active, .collapsible:hover {
   background-color: white;
   color:gray;
-  width:60%;
+  width:100%;
 }
 
 .content {
@@ -322,6 +322,7 @@ a {
   .tm-gallery-wrap {
     max-width: 260px;
   }
+
   .collapsible{
     width:100%;
   }
@@ -523,6 +524,10 @@ figure.effect-bubba:hover p {
   margin: 0 auto;
 }
 
+.tm-w-not80 {
+  max-width: 70%;
+
+}
 .tm-flex-item-left {
   align-self: flex-start;
 }
@@ -702,11 +707,20 @@ figure.effect-bubba:hover p {
   .tm-section {
     padding: 30px;
   }
+  .tm-w-not80{
+    width:100%;
+
+  }
 }
 
 @media (max-width: 554px) {
   .tm-section {
     padding: 15px;
+  }
+
+  .tm-w-not80{
+    width:100%;
+
   }
 }
 
