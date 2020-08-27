@@ -61,8 +61,14 @@ https://templatemo.com/tm-536-dream-pulse
               </a>
             </li>
             <li class="nav-item">
-              <a href="#work" class="nav-link">
+              <a href="#history" class="nav-link">
                 <span class="d-inline-block mr-3">History</span>
+                <span class="d-inline-block tm-white-rect"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#calendar" class="nav-link">
+                <span class="d-inline-block mr-3">Calendar</span>
                 <span class="d-inline-block tm-white-rect"></span>
               </a>
             </li>
@@ -74,17 +80,18 @@ https://templatemo.com/tm-536-dream-pulse
               </a>
             </li>
             <li class="nav-item">
-              <a href="#sponsors" class="nav-link">
-                <span class="d-inline-block mr-3">Sponsors</span>
-                <span class="d-inline-block tm-white-rect"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#scholarship" class="nav-link">
+              <a href="#scholarships" class="nav-link">
                 <span class="d-inline-block mr-3">Scholarship FAQ</span>
                 <span class="d-inline-block tm-white-rect"></span>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="#sponsors" class="nav-link">
+                <span class="d-inline-block mr-3">Our Sponsors</span>
+                <span class="d-inline-block tm-white-rect"></span>
+              </a>
+            </li>
+
             <li class="nav-item">
               <a href="#talk" class="nav-link">
                 <span class="d-inline-block mr-3">Contact</span>
@@ -154,7 +161,7 @@ https://templatemo.com/tm-536-dream-pulse
               <div class="tm-section-half" style="font-size:14px;">
                 <div><img src="pilot.png"></img></div>
                 <h2 class="tm-section-title tm-color-primary mb-5">President Message</h2>
-                <div style="border:gray solid 1px;padding:30px;box-shadow:-5px 10px gray;" id="message-div">
+                <div style="border:gray solid 1px;padding:30px;box-shadow:-5px 10px gray;">
                   <p class="mb-5">
                     <em>Dear valued member,</em></p>
                   <p>I would like to take this opportunity to wish you all a happy, healthy New Year! It's an
@@ -211,6 +218,27 @@ https://templatemo.com/tm-536-dream-pulse
                   </p>
                 </div>
               </div>
+          </section>
+        </div>
+        
+
+        </div>
+
+        <div class="tm-section-wrap bg-white container">
+          <section id="about" class="row tm-section">
+
+            <div class="col">
+              <div class="tm-section-half" style="font-size:14px;">
+                <h2 class="tm-section-title tm-color-primary mb-5">President Message</h2>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="tm-section-half" style="font-size:14px;">
+                <h2 class="tm-section-title tm-color-primary mb-5">President Message</h2>
+              </div>
+            </div>
+
           </section>
         </div>
 
@@ -350,6 +378,26 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
           </section>
         </div>
+        <div class="tm-section-wrap bg-white">
+          <section id="scholarships" class="row tm-section">
+            <div class="col-12 tm-section-pad">
+              <h2 class="tm-color-primary tm-section-title mb-4">Scholarship FAQ</h2>
+              <button class="collapsible">Open Section 1</button>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <button class="collapsible">Open Section 2</button>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <button class="collapsible">Open Section 3</button>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
 
         <div class="tm-section-wrap bg-white">
           <section id="sponsors" class="row tm-section">
@@ -434,6 +482,23 @@ https://templatemo.com/tm-536-dream-pulse
 
 
   document.getElementById("spanDate").innerHTML = months[parseInt(mm)] + " " + dd + ", " + today.getFullYear();
+
+
+
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 </script>
 
 </html>
